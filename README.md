@@ -20,8 +20,8 @@
 
 ##  Table of Contents
 
-- [ Screenshots](#-overview)
-- [ Instructions](#-features)
+- [ Screenshots](#-screenshots)
+- [ Instructions](#-instructions)
 - [ Project Structure](#-project-structure)
   - [ Project Index](#-project-index)
 
