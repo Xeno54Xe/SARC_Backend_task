@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Budget Details</title>
+</head>
+<body>
+    <h1>Budget Details</h1>
+    <ul>
+        {% for budget in budgets %}
+        <li>
+            Amount(set by you): ₹{{ budget.budget_amt }} Total Transactions: ₹{{ budget.transtot }} 
+            Budget left: ₹({{ budget.budget_amt }} - {{ budget.transtot }})
+
+            {% with total_goal_amount=0 %}
+                {% for goal in budget.savings_goals.all %}
+                    {% with total_goal_amount=total_goal_amount|add:goal.goal_amount %}
+                    {% endwith %}
+                {% endfor %}
+                Budget left considering your savings goal: ₹({{ budget.budget_amt }} - {{ budget.transtot }} - {{ total_goal_amount }})
+            {% endwith %}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+

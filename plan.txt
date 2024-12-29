@@ -1,0 +1,20 @@
+models hone chahiye 2:
+ek user details ka and ek transaction details ka
+
+views(check) in tracker:
+homeview = from lec 2-3 of course
+alltransview = simple list/details view type
+newtransview = create new trans(learning reqd) impppp (Done)
+newbudgetview = update/insert a budget
+budgetview: show defined budget by user + show total trans till date + show money left by user
+
+
+urls(check): 1. home page
+        2. view/update budget page
+        3. record new trans
+        4. view/update all trans
+
+
+class DeltransView(generic.DeleteView): 
+    model = transaction 
+    success_url = reverse_lazy('All-Transactions')

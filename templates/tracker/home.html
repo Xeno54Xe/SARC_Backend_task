@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head> <title>HOME</title></head>
+    <body> 
+        <h1>Welcome to the Expense Tracker</h1> 
+        <div class="button-container"> 
+            <a href="{% url 'New-Budget' %}">Set your Budget</a> 
+            <a href="{% url 'Add-saving-goal' %}">Set your Saving Goal</a> 
+            <a href="{% url 'Record-Transaction' %}">Record Transaction</a> 
+            <a href="{% url 'Your-Budget' %}">View Budgets</a> 
+            <a href="{% url 'All-transactions' %}">View Transactions</a> 
+        </div>
+    </body>
+
+</html>

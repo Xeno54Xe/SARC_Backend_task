@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Add Savings Goal</title> 
+</head> 
+<body> 
+    <h1>Add Savings Goal</h1> 
+    {% if error %} <p style="color: red;">{{ error }}</p> 
+    {% endif %} 
+    <form method="post"> 
+        {% csrf_token %} 
+        <label for="budget">Budget:</label> 
+        <select name="budget" id="budget"> 
+            {% for budget in budgets %} <option value="{{ budget.id }}">{{ budget }}</option> 
+                {% endfor %} 
+            </select><br> 
+        <label for="goal_name">Goal Name:</label> 
+        <input type="text" name="goal_name" id="goal_name" required><br> 
+        <label for="goal_amount">Goal Amount:</label> 
+        <input type="number" name="goal_amount" id="goal_amount" required><br> 
+        <button type="submit">Save</button> 
+    </form> 
+</body>
+</html>
