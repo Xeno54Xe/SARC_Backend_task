@@ -20,23 +20,23 @@
 
 ##  Table of Contents
 
-- [ Overview](#-overview)
-- [ Features](#-features)
+- [ Screenshots](#-overview)
+- [ Instructions](#-features)
 - [ Project Structure](#-project-structure)
   - [ Project Index](#-project-index)
 
 
 ---
 
-##  Overview
+##  Screenshots
 
-<code>❯ REPLACE-ME</code>
+Make sure to check out the screenshots folder for example screenshots for the project.
 
 ---
 
-##  Features
+##  Instructions
 
-<code>❯ REPLACE-ME</code>
+Make sure to firstly do [py manage.py flush] to avoid any rookie issues that are beyond my knowledge, then makemigrations and migrate followed by py manage.py runserver
 
 ---
 
