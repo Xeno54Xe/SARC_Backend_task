@@ -27,6 +27,12 @@
 
 
 ---
+##  Notice 
+I tried going for the brownie task but ended up with some issue, i.e in the view budget page- the saved goal amount is not being displayed(fetched from the db prolly). This issue might majorly be something in the HTML. I've copied the HTML files for view budget and addsavinggoal from Chatgpt as frontend is not my cup of tea. I assure you the rest html files and the other code is not at all been pasted from any source. I've completed a course in the past week on django (certifications can be found on my linkedin: vansh-dhillon-b9238131a 
+Also this readme is generated from a readme generator at the last moment of submission so pls dont mind the poop ive put in here.
+Regards
+Vansh Dhillon
+2024B3PS0923P
 
 ##  Screenshots
 
